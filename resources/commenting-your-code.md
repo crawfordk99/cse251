@@ -39,10 +39,12 @@ for i in range(n):
 Better example:
 ```
 # Factorial of 'n'
+for i in range(n):
 ```
 Even better example:
 ```
 # Loop from 1 to (n - 1) to compute the factorial of 'n'
+for i in range(n):
 ```
 
 For purposes of this class, the student should convey not only WHAT the line of code is doing, but WHY it is doing it. Notice that in the 'bad example' only the WHAT is stated. In the 'better example' the WHY is provided, but not the WHAT. In the 'even better example' both the WHAT and WHY are stated.

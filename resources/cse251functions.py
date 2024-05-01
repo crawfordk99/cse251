@@ -51,6 +51,10 @@ def create_signature_file():
     line_count = 0
     frame = inspect.stack()[1]
     assignment_full_path = frame[0].f_code.co_filename
+    if "prove" in assignment_full_path:
+        print("grading...")
+        return
+    
     assignment_name = os.path.basename(assignment_full_path)
     
     with open(assignment_full_path, 'r') as f:

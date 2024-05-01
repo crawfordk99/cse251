@@ -9,3 +9,4 @@
 **/*.class
 **/prove
 **/*-solution.py
+*.env
