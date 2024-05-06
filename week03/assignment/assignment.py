@@ -39,6 +39,32 @@ NUMBERS_EXAMINED_COUNT = 0
 # report results above in the questions)
 NUMBER_THREADS = 10
 
+def is_prime(n: int):
+    """
+    Primality test using 6k+-1 optimization.
+    From: https://en.wikipedia.org/wiki/Primality_test
+
+    Parameters
+    ----------
+    ``n`` : int
+        Number to determine if prime
+
+    Returns
+    -------
+    bool
+        True if ``n`` is prime.
+    """
+
+    if n <= 3:
+        return n > 1
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i ** 2 <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
 
 def main():
     # Start a timer
