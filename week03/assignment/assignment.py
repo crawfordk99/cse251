@@ -1,11 +1,11 @@
 '''
 Requirements
 1. Write a multithreaded program that counts the number of prime numbers 
-   between 100,000,000 and 100,770,803.
+   between 100,000,000 and 100,370,803.
 2. The program should be able to use a variable amount of threads.
 3. Each thread should look over an approximately equal number of numbers.
    This means that you need to devise an algorithm that can divide up the
-   770,803 numbers "fairly" based on a variable number of threads. 
+   370,803 numbers "fairly" based on a variable number of threads. 
 4. The algorithm should work for 1 to 101 threads.
 5. COMMENT every line that you write yourself.
    
